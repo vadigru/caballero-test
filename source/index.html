@@ -32,23 +32,25 @@
         </a>
         <button class="page-header__menu-toggle page-header__menu-toggle--nojs" type="button">Открыть меню</button>
       </div>
-      <nav class="page-header__menu menu">
-        <ul class="list-no-style menu__items">
-          <li class="menu__item"><a href="#">Kvalitet</a></li>
-          <li class="menu__item"><a href="#">Priser</a></li>
-          <li class="menu__item"><a href="#">Samarbeid</a></li>
-          <li class="menu__item"><a href="#">Vet hvordan</a></li>
-          <li class="menu__item"><a href="#">Kontakt</a></li>
-        </ul>
-      </nav>
-      <div class="page-header__lang lang">
-        <ul class="list-no-style lang__items " >
-          <li class="lang__item lang__item--active">no</li>
-          <li class="lang__item"><a href="#">se</a></li>
-          <li class="lang__item"><a href="#">fi</a></li>
-          <li class="lang__item"><a href="#">dk</a></li>
-          <li class="lang__item"><a href="#">en</a></li>
-        </ul>
+      <div class="page-header__navigation navigation navigation--nojs">
+        <nav class="page-header__menu menu">
+          <ul class="list-no-style menu__items">
+            <li class="menu__item"><a href="#">Kvalitet</a></li>
+            <li class="menu__item"><a href="#">Priser</a></li>
+            <li class="menu__item"><a href="#">Samarbeid</a></li>
+            <li class="menu__item"><a href="#">Vet hvordan</a></li>
+            <li class="menu__item"><a href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div class="page-header__lang lang">
+          <ul class="list-no-style lang__items " >
+            <li class="lang__item lang__item--active"><a>no</a></li>
+            <li class="lang__item"><a href="#">se</a></li>
+            <li class="lang__item"><a href="#">fi</a></li>
+            <li class="lang__item"><a href="#">dk</a></li>
+            <li class="lang__item"><a href="#">en</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
@@ -57,9 +59,11 @@
     <section class="page-main__hero hero">
       <div class="wrapper hero__container">
         <div class="hero__image">
-          <h1 class="hero__title">Ny Generasjon Laft
+          <h1 class="hero__title">
+            Ny Generasjon Laft
             of Laftekassa, med
-            en rekke fordeler</h1>
+            en rekke fordeler
+          </h1>
           <button class="hero__btn">SE EKSEMPLER PÅ TØMMERHUS</button>
         </div>
         <div class="hero__icons">
@@ -91,57 +95,84 @@
     <section class="page-main__unique-tech unique-tech">
       <div class="wrapper unique-tech__container">
         <h2 class="unique-tech__title">Unik teknologi sikre det Beste Laftehus</h2>
+        <p class="unique-tech__text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </p>
         <div class="unique-tech__feat">
-          <ul class="list-no-style unique-tech__list">
+          <ul class="list-no-style unique-tech__items">
             <li class="unique-tech__item">
-              <label for="tech-1">
-                <input type="radio" name="tech" id="tech-1">
+              <input class="unique-tech__input visually-hidden" id="tech-1" name="tech" type="radio">
+              <label class="unique-tech__label" for="tech-1">
                 Prisen og kvadratmeter utgjør
               </label>
             </li>
             <li class="unique-tech__item">
-              <label for="tech-2">
-                <input type="radio" name="tech" id="tech-2">
+              <input class="unique-tech__input visually-hidden" id="tech-2" name="tech" type="radio">
+              <label class="unique-tech__label" for="tech-2">
                 Levering inkluderer også disse
               </label>
             </li>
             <li class="unique-tech__item">
-              <label for="tech-3">
-                <input type="radio" name="tech" id="tech-3">
+              <input class="unique-tech__input visually-hidden" id="tech-3" name="tech" type="radio">
+              <label class="unique-tech__label" for="tech-3">
                 Hjørneforbindelser typer, etc.
               </label>
             </li>
             <li class="unique-tech__item">
-              <label for="tech-4">
-                <input type="radio" name="tech" id="tech-4">
+              <input class="unique-tech__input visually-hidden" id="tech-4" name="tech" type="radio">
+              <label class="unique-tech__label" for="tech-4">
                 Tømmerstokkprofiler og typer
               </label>
-              <ol class="unique-tech__sublist" start="10">
-                <li class="unique-tech__subitem">Corner</li>
-                <li class="unique-tech__subitem">Foundation crown</li>
-                <li class="unique-tech__subitem">Dovetail</li>
-                <li class="unique-tech__subitem">Reverse joint</li>
-                <li class="unique-tech__subitem">Combined joint</li>
-                <li class="unique-tech__subitem">Purlins joint</li>
-                <li class="unique-tech__subitem">End joint</li>
-                <li class="unique-tech__subitem">Tongue & Groove</li>
-              </ol>
+              <ul class="list-no-style unique-tech__subitems">
+                <li class="unique-tech__subitem">
+                  <span class="unique-tech__subitem-number">10 </span>
+                  <span class="unique-tech__subitem-text">Corner</span>
+                </li>
+                <li class="unique-tech__subitem">
+                  <span class="unique-tech__subitem-number">11 </span>
+                  <span class="unique-tech__subitem-text">Foundation crown</span>
+                </li>
+                <li class="unique-tech__subitem">
+                  <span class="unique-tech__subitem-number">12 </span>
+                  <span class="unique-tech__subitem-text">Dovetail</span>
+                </li>
+                <li class="unique-tech__subitem">
+                  <span class="unique-tech__subitem-number">13 </span>
+                  <span class="unique-tech__subitem-text">Reverse joint</span>
+                </li>
+                <li class="unique-tech__subitem">
+                  <span class="unique-tech__subitem-number">14 </span>
+                  <span class="unique-tech__subitem-text">Combined joint</span>
+                </li>
+                <li class="unique-tech__subitem">
+                  <span class="unique-tech__subitem-number">15 </span>
+                  <span class="unique-tech__subitem-text">Purlins joint</span>
+                </li>
+                <li class="unique-tech__subitem">
+                  <span class="unique-tech__subitem-number">16 </span>
+                  <span class="unique-tech__subitem-text">End joint</span>
+                </li>
+                <li class="unique-tech__subitem">
+                  <span class="unique-tech__subitem-number">17 </span>
+                  <span class="unique-tech__subitem-text">Tongue & Groove</span>
+                </li>
+              </ul>
             </li>
             <li class="unique-tech__item">
-              <label for="tech-5">
-                <input type="radio" name="tech" id="tech-5">
+              <input class="unique-tech__input visually-hidden" id="tech-5" name="tech" type="radio">
+              <label class="unique-tech__label" for="tech-5">
                 Forskjellige størrelser, synking
               </label>
             </li>
             <li class="unique-tech__item">
-              <label for="tech-6">
-                <input type="radio" name="tech" id="tech-6">
+              <input class="unique-tech__input visually-hidden" id="tech-6" name="tech" type="radio">
+              <label class="unique-tech__label" for="tech-6">
                 Utfreste flater, beitskier, buer
               </label>
             </li>
             <li class="unique-tech__item">
-              <label for="tech-7">
-                <input type="radio" name="tech" id="tech-7">
+              <input class="unique-tech__input visually-hidden" id="tech-7" name="tech" type="radio">
+              <label class="unique-tech__label" for="tech-7">
                 Utfresing, borehull, dryppkant
               </label>
             </li>

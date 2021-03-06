@@ -99,3 +99,54 @@ function initMap() {
     });
   }
 }
+
+// var menu = document.querySelector('.menu');
+var menuToggle = document.querySelector('.page-header__menu-toggle');
+// var languageBar = document.querySelector('.lang');
+var navigation = document.querySelector('.page-header__navigation');
+var ESC_KEYCODE = 27;
+
+// menu toggle ----------------------------------------------------------------
+
+menuToggle.classList.remove('page-header__menu-toggle--nojs');
+// menu.classList.remove('menu--nojs');
+// languageBar.classList.remove('lang--nojs');
+navigation.classList.remove('navigation--nojs');
+
+var menuClose = function() {
+  menuToggle.classList.remove('page-header__menu-toggle--open');
+  // menu.classList.remove('menu--open');
+  // languageBar.classList.remove('lang--open');
+  navigation.classList.remove('navigation--open');
+  document.removeEventListener('keydown', onEscMenuClose);
+};
+
+var onEscMenuClose = function(evt) {
+  if (evt.keyCode === ESC_KEYCODE) {
+    menuClose();
+  }
+};
+
+var onClickToggle = function () {
+  if (!menuToggle.classList.contains('page-header__menu-toggle--open')) {
+    menuToggle.classList.add('page-header__menu-toggle--open');
+    // menu.classList.add('menu--open');
+    // languageBar.classList.add('lang--open');
+    navigation.classList.add('navigation--open');
+    document.addEventListener('keydown', onEscMenuClose);
+    console.log(`test`);
+  } else {
+    menuToggle.classList.remove('page-header__menu-toggle--open');
+    // menu.classList.remove('menu--open');
+    // languageBar.classList.remove('lang--open');
+    navigation.classList.remove('navigation--open');
+  }
+};
+
+var addListeners = function() {
+  if (navigation) {
+    menuToggle.addEventListener('click', onClickToggle);
+  }
+};
+
+addListeners();

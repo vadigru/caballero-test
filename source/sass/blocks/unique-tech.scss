@@ -1,13 +1,71 @@
 .unique-tech {
-  margin-bottom: 50px;
+  margin-bottom: 72px;
 }
 
 .unique-tech__title {
   @include font(42px, 60px, 0.76px, $font-futura-book, 300, #333333);
   margin-bottom: 50px;
+  text-align: center;
+}
+
+.unique-tech__text {
+  @include font(19px, 32px, 0.48px, $font-futura-book, 300, #666666);
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .unique-tech__feat {
   padding-left: 30px;
   margin-bottom: 50px;
 }
+
+.unique-tech__items {
+  @include font(19px, 32px, 1.06px, $font-futura-medium, 500, #1C1F22);
+}
+
+.unique-tech__item {
+  position: relative;
+}
+
+.unique-tech__label {
+  padding-left: 40px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.unique-tech__subitem-text {
+  &:hover {
+    color: #3E5235;
+    border-bottom: 1px solid #3E5235;
+    cursor: pointer;
+  }
+}
+
+.unique-tech__label::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 1px solid #979797;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.unique-tech__input:checked + label::before {
+  border-radius: 1px solid #3E5235;
+  background-color: #3E5235;
+}
+
+.unique-tech__input:checked + label {
+  color: #3E5235;
+}
+
+.unique-tech__subitems {
+  @include font(19px, 32px, 0.48px, $font-futura-book, 300, #666666);
+  padding-left: 40px;
+}
+

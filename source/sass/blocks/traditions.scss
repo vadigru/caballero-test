@@ -15,13 +15,13 @@
 }
 
 .traditions__descr-title {
-  @include font(16px, 24px, 3px, $font-futura-medi, 500, #1D1F22);
+  @include font(16px, 24px, 3px, $font-futura-medium, 500, #1D1F22);
   text-transform: uppercase;
   position: relative;
   margin-bottom: 10px;
   padding-left: 20px;
   &::after {
-    @include font(170px, 218px, 4.25px, $font-futura-medi, 500, #C39F71);
+    @include font(170px, 218px, 4.25px, $font-futura-medium-oblique, 500, #C39F71);
     font-style: oblique;
     content: "2";
     display: block;

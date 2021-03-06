@@ -24,15 +24,13 @@
 }
 
 .footer__nav {
-  @include font(16px, 40px, 0.76px, $font-futura-medi, 400, #141414);
+  @include font(16px, 40px, 0.76px, $font-futura-medium, 400, #141414);
   margin-bottom: 25px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   order: 3;
 }
-
-
 
 .footer__nav-items {
   width: 100%;
