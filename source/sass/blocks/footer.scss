@@ -1,0 +1,115 @@
+.page-footer {
+  background: url('../../img/skandinavisk-tommerhuss-akvarelis-footer.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  // outline: 2px solid red;
+  // height: 500px;
+}
+
+.footer__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__logo {
+  margin-left: 5px;
+  margin-bottom: 15px;
+  flex-shrink: 1;
+}
+
+.footer__logo-image {
+  width: 132px;
+}
+
+.footer__nav {
+  @include font(16px, 40px, 0.76px, $font-futura-medi, 400, #141414);
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  order: 3;
+}
+
+
+
+.footer__nav-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer__nav-item {
+
+  &:first-child {
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social {
+  order: 2;
+}
+
+.social__icons {
+  width: 105px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5px;
+}
+
+.social__icon {
+  width: 20px;
+
+}
+
+.social__btn {
+  fill: #7E7E7E;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    fill: #2A4D3A;
+  }
+}
+
+.social__icon-wrap {
+  display: flex;
+  align-self: center;
+}
+
+.footer__bottom {
+  @include font(14px, 20px, 0.57px, $font-futura-book, 400, #666666);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & img {
+    margin-bottom: 25px;
+  }
+}
+
+.footer__copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 480px) {
+  .footer__nav {
+    order: 1;
+    outline: 2px solid green;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .footer__nav-items {
+    flex-direction: row;
+    justify-content: space-evenly;
+    outline: 2px solid blue;
+  }
+}

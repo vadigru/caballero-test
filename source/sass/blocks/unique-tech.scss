@@ -1,0 +1,13 @@
+.unique-tech {
+  margin-bottom: 50px;
+}
+
+.unique-tech__title {
+  @include font(42px, 60px, 0.76px, $font-futura-book, 300, #333333);
+  margin-bottom: 50px;
+}
+
+.unique-tech__feat {
+  padding-left: 30px;
+  margin-bottom: 50px;
+}

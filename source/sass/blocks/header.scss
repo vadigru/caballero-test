@@ -1,0 +1,138 @@
+.page-header {
+  font-family: 'Futura PT Medium', 'Arial', sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 3.9px;
+  text-transform: uppercase;
+  color: #101010;
+}
+
+.page-header__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.page-header__logo {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  // padding-left: 40px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page-header__logo-image {
+  margin-left: 20px;
+}
+
+.page-header__link {
+  margin-right: auto;
+}
+
+.page-header__menu-toggle {
+  font-size: 0;
+  display: block;
+  margin-top: -5px;
+  padding-right: 60px;
+  content: "";
+  background-image: url("../../img/icon-menu-open.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
+  box-sizing: content-box;
+
+  &--open {
+    background-image: url("../../img/icon-menu-close.svg");
+    background-size: 21px 22px;
+  }
+
+  // &--nojs {
+  //   display: none;
+  // }
+}
+
+.menu {
+  display: none;
+}
+
+.menu__items {
+}
+
+.menu__item {
+  margin-bottom: 15px;
+  &:first-child {
+    padding-top: 15px;
+  }
+  &:last-child {
+    margin-bottom: 25px;
+  }
+}
+
+.lang {
+  display: none;
+}
+
+.lang__items {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.lang__item {
+  margin-right: 15px;
+  & a {
+
+
+  }
+  &--active {
+    // text-decoration: underline;
+  }
+}
+
+
+
+// .page-header__container {
+//   width: 92.3611111%;
+//   height: 100%;
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: center;
+// }
+
+// .page-header__logo {
+//   // margin-right: 11.9548872%;
+//   margin-right: 159px;
+// }
+// .page-header__container {
+//   display: flex;
+//   margin-bottom: 28px;
+// }
+
+// .menu {
+//   width: 45.4887218%;
+//   // margin-right: 15.4135338%;
+//   margin-right: 205px;
+// }
+
+// .lang {
+//   width: 14.2857143%;
+// }
+
+// .menu__items,
+// .lang__items {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+//   flex-wrap: wrap;
+// }
+
+// .lang__item {
+//     text-align: center;
+//     outline: 1px solid fuchsia;
+//     & a {
+//       background-color: gold;
+//     }
+
+// }

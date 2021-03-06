@@ -1,0 +1,56 @@
+.benefits__title {
+  @include font(42px, 60px, 0.76px, $font-futura-book, 300, #333333);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.benefits__item {
+  padding-left: 60px;
+  width: 80%;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.benefits__icon-wrap {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.benefits__item-title {
+  @include font(16px, 24px, 3px, $font-futura-medi, 500, #1D1F22);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.benefits__item-text {
+  @include font(19px, 32px, 0.48px, $font-futura-book, 300, #666666);
+  margin-bottom: 15px;
+}
+
+.benefits__btn {
+  @include font(19px, 32px, 0.48px, $font-futura-book, 300, #333333);
+  text-decoration: underline;
+  position: relative;
+  &::after {
+    content: url("../../img/read-more-icon.svg");
+    width: 19px;
+    height: 32px;
+    position: absolute;
+    top: -2px;
+    right: -25px;
+    transform: rotate(90deg);
+  }
+  &--open {
+    &::after {
+      transform: rotate(-90deg);
+    }
+  }
+}

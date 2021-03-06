@@ -1,0 +1,25 @@
+.references {
+  position: relative;
+}
+
+.references__title {
+  @include font(42px, 60px, 0.76px, $font-futura-book, 300, #333333);
+  position: absolute;
+  display: block;
+  // top: 30px;
+  // padding: 25px;
+  width: 100%;
+  z-index: 999;
+  text-align: center;
+  background: linear-gradient(white 0%, transparent 100%);
+}
+
+.references__bottom-gradient {
+  background: linear-gradient(transparent 0%, white 100%);
+  // padding: 25px 0;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+}

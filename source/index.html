@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SKANDINAVS TøMMERHUS</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script>
+  <link rel="preload" href="fonts/FuturaPTBold.otf" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/FuturaPTDemi.otf" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/FuturaPTBook.otf" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/FuturaPTMedium.otf" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
+  <header class="page-header">
+    <div class="wrapper page-header__container">
+      <div class="page-header__logo">
+        <a class="page-header__link" href="#">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/skandinavisk-tommerhus-logo.svg">
+            <source media="(min-width: 768px)" srcset="img/skandinavisk-tommerhus-logo.svg">
+            <img class="page-header__logo-image" src="img/skandinavisk-tommerhus-logo.svg" width="172" height="37" alt="skandinavisk Tommerhus logo">
+          </picture>
+        </a>
+        <button class="page-header__menu-toggle page-header__menu-toggle--nojs" type="button">Открыть меню</button>
+      </div>
+      <nav class="page-header__menu menu">
+        <ul class="list-no-style menu__items">
+          <li class="menu__item"><a href="#">Kvalitet</a></li>
+          <li class="menu__item"><a href="#">Priser</a></li>
+          <li class="menu__item"><a href="#">Samarbeid</a></li>
+          <li class="menu__item"><a href="#">Vet hvordan</a></li>
+          <li class="menu__item"><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="page-header__lang lang">
+        <ul class="list-no-style lang__items " >
+          <li class="lang__item lang__item--active">no</li>
+          <li class="lang__item"><a href="#">se</a></li>
+          <li class="lang__item"><a href="#">fi</a></li>
+          <li class="lang__item"><a href="#">dk</a></li>
+          <li class="lang__item"><a href="#">en</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-main__hero hero">
+      <div class="wrapper hero__container">
+        <div class="hero__image">
+          <h1 class="hero__title">Ny Generasjon Laft
+            of Laftekassa, med
+            en rekke fordeler</h1>
+          <button class="hero__btn">SE EKSEMPLER PÅ TØMMERHUS</button>
+        </div>
+        <div class="hero__icons">
+          <div class="hero__icon-wrap">
+            <svg class="hero__icon hero__icon--1" width="88px" height="67px">
+              <use xlink:href="#hero-icon-1"></use>
+            </svg>
+            <!-- <img src="img/hero-icon-1.svg" alt="LIVSTID GARANTI" width="63" height="57"/> -->
+            <p class="hero__text">LIVSTID GARANTI</p>
+          </div>
+          <div class="hero__icon-wrap">
+            <svg class="hero__icon hero__icon--2" width="73px" height="73px">
+              <use xlink:href="#hero-icon-2"></use>
+            </svg>
+            <!-- <img src="img/hero-icon-2.svg" alt="BESTE KVALITET" width="58" height="60"/> -->
+            <p class="hero__text">BESTE KVALITET</p>
+          </div>
+          <div class="hero__icon-wrap">
+            <svg class="hero__icon hero__icon--3" width="70px" height="63px">
+              <use xlink:href="#hero-icon-3"></use>
+            </svg>
+            <!-- <img src="img/hero-icon-3.svg" alt="BESTE PRISEN" width="58" height="59"/> -->
+            <p class="hero__text">BESTE PRISEN</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-main__unique-tech unique-tech">
+      <div class="wrapper unique-tech__container">
+        <h2 class="unique-tech__title">Unik teknologi sikre det Beste Laftehus</h2>
+        <div class="unique-tech__feat">
+          <ul class="list-no-style unique-tech__list">
+            <li class="unique-tech__item">
+              <label for="tech-1">
+                <input type="radio" name="tech" id="tech-1">
+                Prisen og kvadratmeter utgjør
+              </label>
+            </li>
+            <li class="unique-tech__item">
+              <label for="tech-2">
+                <input type="radio" name="tech" id="tech-2">
+                Levering inkluderer også disse
+              </label>
+            </li>
+            <li class="unique-tech__item">
+              <label for="tech-3">
+                <input type="radio" name="tech" id="tech-3">
+                Hjørneforbindelser typer, etc.
+              </label>
+            </li>
+            <li class="unique-tech__item">
+              <label for="tech-4">
+                <input type="radio" name="tech" id="tech-4">
+                Tømmerstokkprofiler og typer
+              </label>
+              <ol class="unique-tech__sublist" start="10">
+                <li class="unique-tech__subitem">Corner</li>
+                <li class="unique-tech__subitem">Foundation crown</li>
+                <li class="unique-tech__subitem">Dovetail</li>
+                <li class="unique-tech__subitem">Reverse joint</li>
+                <li class="unique-tech__subitem">Combined joint</li>
+                <li class="unique-tech__subitem">Purlins joint</li>
+                <li class="unique-tech__subitem">End joint</li>
+                <li class="unique-tech__subitem">Tongue & Groove</li>
+              </ol>
+            </li>
+            <li class="unique-tech__item">
+              <label for="tech-5">
+                <input type="radio" name="tech" id="tech-5">
+                Forskjellige størrelser, synking
+              </label>
+            </li>
+            <li class="unique-tech__item">
+              <label for="tech-6">
+                <input type="radio" name="tech" id="tech-6">
+                Utfreste flater, beitskier, buer
+              </label>
+            </li>
+            <li class="unique-tech__item">
+              <label for="tech-7">
+                <input type="radio" name="tech" id="tech-7">
+                Utfresing, borehull, dryppkant
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div  class="unique-tech__image">
+          <img src="img/Layer-transparent@2x.png" alt="Wooden house" />
+        </div>
+      </div>
+    </section>
+
+    <section class="page-main__promo-video promo-video">
+      <div class="wrapper promo-video__container">
+        <h2 class="visually-hidden">Video</h2>
+        <img src="img/kontor-2160x1082.jpg" alt="Promo video">
+        <div >
+          <button class="promo-video__play">
+            <span class="promo-video__play-sign">
+              <span class="visually-hidden">Play</span>
+            </span>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="page-main__benefits benefits">
+      <div class="wrapper benefits__container">
+        <h2 class="benefits__title">Fordeler</h2>
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            <div class="benefits__icon-wrap">
+              <svg class="benefits__icon" width="80px" height="80px">
+                <use xlink:href="#benefits-icon-1"></use>
+              </svg>
+            </div>
+            <h3 class="benefits__item-title">Velvære Økohus</h3>
+            <p class="benefits__item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry…</p>
+            <a class="benefits__btn">Lasīt vairāk</a>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__icon-wrap">
+              <svg class="benefits__icon" width="80px" height="80px">
+                <use xlink:href="#benefits-icon-2s"></use>
+              </svg>
+            </div>
+            <h3 class="benefits__item-title">Høyeste kvalitet</h3>
+            <p class="benefits__item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry…</p>
+            <a class="benefits__btn">Lasīt vairāk</a>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__icon-wrap">
+              <svg class="benefits__icon" width="80px" height="80px">
+                <use xlink:href="#benefits-icon-3"></use>
+              </svg>
+            </div>
+            <h3 class="benefits__item-title">Autentisk og Tradisjonell</h3>
+            <p class="benefits__item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <a class="benefits__btn benefits__btn--open">Aizvērt</a>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__icon-wrap">
+              <svg class="benefits__icon" width="80px" height="80px">
+                <use xlink:href="#benefits-icon-4"></use>
+              </svg>
+            </div>
+            <h3 class="benefits__item-title">TIL EN RETTFERDIG PRIS</h3>
+            <p class="benefits__item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry…</p>
+            <a class="benefits__btn">Lasīt vairāk</a>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__icon-wrap">
+              <svg class="benefits__icon" width="80px" height="80px">
+                <use xlink:href="#benefits-icon-5-t"></use>
+              </svg>
+            </div>
+            <h3 class="benefits__item-title">Laftkassa på bestilling</h3>
+            <p class="benefits__item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry…</p>
+            <a class="benefits__btn">Lasīt vairāk</a>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__icon-wrap">
+              <svg class="benefits__icon" width="80px" height="80px">
+                <use xlink:href="#benefits-icon-6-t"></use>
+              </svg>
+            </div>
+            <h3 class="benefits__item-title">Alle med Garanti</h3>
+            <p class="benefits__item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry…</p>
+            <a class="benefits__btn">Lasīt vairāk</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="page-main__actual actual">
+      <div class="wrapper actual__container">
+        <h2 class="actual__title">Aktualiteter</h2>
+        <div class="actual__images">
+          <div class="actual__image-wrap">
+            <img src="img/veggtykkelser-2160x1453.jpg" alt="Awesome picture" width="570" height="386">
+            <p class="actual__text">
+              <span>
+                Pretēji vispārpieņemtai pārliecībai, Lorem Ipsum nav teksts bez satura. Tā pirmsākums meklējams 45.gadā p.m.ē
+                <a href="" class="actual__link">Aktualitāte</a>
+              </span>
+            </p>
+          </div>
+          <div class="actual__image-wrap">
+            <img src="img/actual-wood-wall.jpg" alt="Awesome picture" width="570" height="386">
+          </div>
+        </div>
+        <a href="/" class="actual__link">alle nyheter</a>
+      </div>
+    </section>
+
+    <section class="page-main__references references">
+      <div class="wrapper references__container">
+        <h2 class="references__title">Referenser</h2>
+        <div class="references__bottom-gradient"><span class="visually-hidden">bottom gradient</span></div>
+        <div id="map"><span class="visually-hidden">Map</span></div>
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13618119.904887954!2d12.082690412164293!3d57.29378728030355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slv!4v1614867053761!5m2!1sen!2slv" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+        <!-- <ul class="references__numbers">
+          <li class="references__number">1113</li>
+          <li class="references__number">890</li>
+          <li class="references__number">459</li>
+          <li class="references__number">64</li>
+          <li class="references__number">32</li>
+          <li class="references__number">77</li>
+        </ul> -->
+      </div>
+    </section>
+
+    <section class="page-main__traditions traditions">
+      <div class="wrapper traditions__container">
+        <h2 class="traditions__title">Tradisjoner</h2>
+        <div class="traditions__images">
+          <img src="img/Group%2023.jpg" alt="Wooden wall" width="642" height="474">
+        </div>
+        <div class="traditions__descr">
+          <h3 class="traditions__descr-title">Tittel</h3>
+          <p class="traditions__descr-text">Guļbūve ir viena no senākajām ēku konstrukcijām, kura, nezaudējot savu īpašo vērtību un nozīmi, saglabājusies līdz pat mūsdienām. Aizvien vairāk pilsētnieku izjūt nepieciešamību dzīvot ekoloģiski tīrā un mājīgā vidē, būt harmonijā ar dabu, ar sevi. Meistarīgi veidota guļbūve apvienojumā ar modernām tehnoloģijām palīdz šos sapņus realizēt dzīvē.</p>
+        </div>
+        <div class="traditions__download download">
+          <svg class="download__icon" width="27px" height="32px">
+            <use xlink:href="#icon-download-pdf"></use>
+          </svg>
+          <a href="/" class="download__link">Last ned brosjyre</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer footer">
+    <div class="wrapper footer__container">
+      <div class="footer__top">
+        <div class="footer__logo">
+          <a class="footer__link">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/skandinavisk-tommerhus-logo.svg">
+              <source media="(min-width: 768px)" srcset="img/skandinavisk-tommerhus-logo.svg">
+              <img class="footer__logo-image" src="img/skandinavisk-tommerhus-logo.svg" width="182" height="6" alt="skandinavisk Tommerhus logo">
+            </picture>
+          </a>
+        </div>
+        <nav class="footer__nav">
+          <ul class="list-no-style footer__nav-items">
+            <li class="footer__nav-item"><a href="">Nedlastinger</a></li>
+            <li class="footer__nav-item"><a href="">Regler for informasjonskapsler</a></li>
+            <li class="footer__nav-item"><a href="">Retningslinjer for personvern</a></li>
+          </ul>
+        </nav>
+        <div class="footer__social social">
+          <ul class="list-no-style social__icons">
+            <li class="social__icon-wrap">
+              <a href="" class="social__btn">
+                <svg class="social__icon social__icon--facebook" width="24" height="24">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__icon-wrap">
+              <a href="" class="social__btn">
+                <svg class="social__icon social__icon--linkedin" width="24" height="24">
+                  <use xlink:href="#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__icon-wrap">
+              <a href="" class="social__btn">
+                <svg class="social__icon social__icon--youtube" width="16" height="12">
+                  <use xlink:href="#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__icon-wrap">
+              <a href="" class="social__btn">
+                <svg class="social__icon social__icon--instagram" width="16" height="16">
+                  <use xlink:href="#instagram"></use>
+                </svg>
+            </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright"><span>© 2020 SKANDINAVISK TØMMERHUS.</span><span>Alle rettigheter er forbeholdt.</span></p>
+        <img src="img/_caballero-digital-agency.svg" alt="caballero logo" width="74" height="32">
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/picturefill.min.js" async></script>
+  <script src="js/script.min.js"></script>
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBO87mtp8t5fnC1fM5OiukCSEBamuwVYUY&callback=initMap&libraries=&v=weekly"
+  async
+  >
+  </script>
+</body>
+</html>
