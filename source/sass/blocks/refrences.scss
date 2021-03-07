@@ -6,8 +6,6 @@
   @include font(42px, 60px, 0.76px, $font-futura-book, 300, #333333);
   position: absolute;
   display: block;
-  // top: 30px;
-  // padding: 25px;
   width: 100%;
   z-index: 999;
   text-align: center;
@@ -16,10 +14,29 @@
 
 .references__bottom-gradient {
   background: linear-gradient(transparent 0%, white 100%);
-  // padding: 25px 0;
   height: 50px;
   position: absolute;
   bottom: 0;
   width: 100%;
   z-index: 999;
+}
+
+@media screen and (min-width: $tablet-width) {
+
+}
+
+@media screen and (min-width: $desktop-width) {
+  .references {
+    width: 100%;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .references__container {
+    width: 92.3611111%;
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }

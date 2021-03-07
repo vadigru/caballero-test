@@ -23,7 +23,7 @@
 }
 
 .unique-tech__items {
-  @include font(19px, 24px, 1.06px, $font-futura-medium, 500, #1C1F22);
+  @include font(16px, 24px, 1.06px, $font-futura-medium, 500, #1C1F22);
 }
 
 .unique-tech__item {
@@ -83,6 +83,11 @@
   .unique-tech__preview {
     display: flex;
     justify-content: center;
+  }
+
+  .unique-tech__items {
+    // @include font(16px, 24px, 1.06px, $font-futura-medium, 500, #1C1F22);
+    font-size: 19px;
   }
 
   .unique-tech__feat {

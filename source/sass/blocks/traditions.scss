@@ -1,4 +1,3 @@
-// @mixin font($size, $height, $letter, $family: sans-serif, $weight: normal,  $color: $black)
 .traditions__title {
   @include font(42px, 60px, 0.76px, $font-futura-book, 300, #333333);
   text-align: center;
@@ -6,8 +5,38 @@
 }
 
 .traditions__images {
+  max-width: 642px;
+  margin-right: auto;
   margin-bottom: 100px;
+  margin-left: auto;
   text-align: center;
+  position: relative;
+}
+
+.arrows {
+  width: 90px;
+  height: 45px;
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+}
+
+.arrows__left,
+.arrows__right {
+  width: 45px;
+  height: 45px;
+  border: none;
+  background-color: #ffffff;
+  background-image: url("../../img/read-more-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+}
+
+.arrows__right {
+  background-image: url("../../img/read-more-icon.svg");
+  transform: rotate(0);
 }
 
 .traditions__descr {
@@ -35,7 +64,6 @@
 .traditions__descr-text {
   @include font(19px, 32px, 0.47px, $font-futura-book, 300, #666666);
   padding: 0 20px;
-  text-align: justify;
 }
 
 .download {
@@ -52,4 +80,58 @@
 .download__link {
   @include font(16px, 32px, 3px, $font-futura-demi, 500, #333333);
   text-transform: uppercase;
+  position: relative;
+  &::after {
+    content: url("../../img/read-more-icon.svg");
+    width: 19px;
+    height: 32px;
+    position: absolute;
+    top: 0px;
+    right: -27px;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .traditions__descr {
+    width: 662px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .trditions {
+    width: 100%;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .traditions__container {
+    width: 92.3611111%;
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .traditions__content {
+    display: flex;
+  }
+
+  .traditions__images {
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  .traditions__descr {
+    width: 40.1709402%;
+    max-width: 470px;
+    padding-top: 80px;
+  }
+
+  .traditions__descr-text {
+    @include font(19px, 32px, 0.47px, $font-futura-book, 300, #666666);
+    padding: 0 0 0 20px;
+  }
 }

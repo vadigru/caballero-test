@@ -1,3 +1,7 @@
+.actual {
+  margin-bottom: 80px;
+}
+
 .actual__container {
   display: flex;
   flex-direction: column;
@@ -12,6 +16,7 @@
 .actual__images {
   display: flex;
   flex-direction: column;
+  margin-bottom: 35px;
 }
 
 .actual__image-wrap {
@@ -19,15 +24,16 @@
   display: flex;
   transition: all 0.3s ease-in-out;
   &:first-child {
-    // margin-right: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+  }
+  &:first-child:hover {
+    transform: scale(1.02) translateY(-5px);
   }
   &:hover {
-    transform: scale(1.02);
+    transform: scale(1.02) translateY(5px);
     cursor: pointer;
   }
 }
-
 
 .actual__text {
   @include font(18px, 24px, normal, $font-futura-demi, 300, #ffffff);
@@ -45,9 +51,58 @@
 }
 
 .actual__link {
-  @include font(18px, 24px, normal, $font-futura-demi, 300, #ffffff);
+  @include font(16px, 32px, 3px, $font-futura-demi, 500, #333333);
+  text-transform: uppercase;
   display: block;
   padding: 10px 0;
-  // position: absolute;
-  // bottom: 20px;
+  position: relative;
+  &::after {
+    content: url("../../img/read-more-icon.svg");
+    width: 19px;
+    height: 32px;
+    position: absolute;
+    top: 9.5px;
+    right: -27px;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+
+}
+
+@media screen and (min-width: $desktop-width) {
+  .actual {
+    width: 100%;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .actual__container {
+    width: 92.3611111%;
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .actual__images {
+    flex-direction: row;
+  }
+
+  .actual__image-wrap {
+    position: relative;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+    &:first-child {
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+    &:first-child:hover {
+      transform: scale(1.02) translateX(-5px);
+    }
+    &:hover {
+      transform: scale(1.02) translateX(5px);
+      cursor: pointer;
+    }
+  }
 }
