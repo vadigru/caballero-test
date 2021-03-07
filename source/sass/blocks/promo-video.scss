@@ -1,6 +1,6 @@
 .promo-video {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .promo-video__play {
@@ -29,3 +29,30 @@
   border-color: transparent transparent transparent white;
 }
 
+@media screen and (min-width: $tablet-width) {
+  .promo-video__play {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .promo-video {
+    width: 100%;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .promo-video__container {
+    width: 92.3611111%;
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .promo-video__play {
+    width: 96px;
+    height: 96px;
+  }
+}

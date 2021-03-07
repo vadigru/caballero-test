@@ -40,6 +40,9 @@
   margin-bottom: 60px;
   margin-left: 25px;
   z-index: 999;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .hero__icons {
@@ -69,7 +72,7 @@
   margin-bottom: 15px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet-width) {
   .hero__title {
     @include font(50px, 62px, 0.06px, $font-futura-book, 300, #ffffff);
     max-width: 450px;
@@ -100,17 +103,19 @@
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: $desktop-width) {
   .hero {
     width: 100%;
     max-width: 1440px;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .hero__container {
     width: 92.3611111%;
     max-width: 1330px;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
     display: flex;
     align-items: center;
     position: relative;
