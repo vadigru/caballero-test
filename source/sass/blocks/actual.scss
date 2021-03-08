@@ -39,9 +39,9 @@
   @include font(18px, 24px, normal, $font-futura-demi, 300, #ffffff);
   width: 100%;
   height: 100%;
-  z-index: 999;
   position: absolute;
   bottom: 0;
+  z-index: 999;
   background-color: rgba(0, 0, 0, 0.5);
   & span {
     padding: 0 20px;
@@ -50,18 +50,23 @@
   }
 }
 
+.actual__text-link {
+  @include font(18px, 28px, normal, $font-futura-book, 300, #ffffff);
+  display: block;
+  padding: 10px 0;
+}
+
 .actual__link {
   @include font(16px, 32px, 3px, $font-futura-demi, 500, #333333);
   text-transform: uppercase;
-  display: block;
-  padding: 10px 0;
+  margin-left: -15px;
   position: relative;
   &::after {
     content: url("../../img/read-more-icon.svg");
     width: 19px;
     height: 32px;
     position: absolute;
-    top: 9.5px;
+    top: 0;
     right: -27px;
   }
 }

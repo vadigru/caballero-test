@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SKANDINAVS TøMMERHUS</title>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script>
   <link rel="preload" href="fonts/FuturaPTBold.otf" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/FuturaPTDemi.otf" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/FuturaPTBook.otf" as="font" crossorigin="anonymous">
@@ -280,7 +279,7 @@
             <p class="actual__text">
               <span>
                 Pretēji vispārpieņemtai pārliecībai, Lorem Ipsum nav teksts bez satura. Tā pirmsākums meklējams 45.gadā p.m.ē
-                <a href="" class="actual__link">Aktualitāte</a>
+                <a href="" class="actual__text-link">Aktualitāte</a>
               </span>
             </p>
           </div>
@@ -288,24 +287,16 @@
             <img src="img/actual-wood-wall.jpg" alt="Awesome picture" width="570" height="386">
           </div>
         </div>
-        <a href="/" class="actual__link">alle nyheter</a>
+        <a href="/" class="actual__link ">alle nyheter</a>
       </div>
     </section>
 
     <section class="page-main__references references">
       <div class="wrapper references__container">
         <h2 class="references__title">Referenser</h2>
-        <div class="references__bottom-gradient"><span class="visually-hidden">bottom gradient</span></div>
-        <div id="map"><span class="visually-hidden">Map</span></div>
-        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13618119.904887954!2d12.082690412164293!3d57.29378728030355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slv!4v1614867053761!5m2!1sen!2slv" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
-        <!-- <ul class="references__numbers">
-          <li class="references__number">1113</li>
-          <li class="references__number">890</li>
-          <li class="references__number">459</li>
-          <li class="references__number">64</li>
-          <li class="references__number">32</li>
-          <li class="references__number">77</li>
-        </ul> -->
+        <div class="references__map-wrap">
+          <img class="references__map-static" src="img/static_map.png" alt="map"/>
+        </div>
       </div>
     </section>
 
@@ -388,7 +379,7 @@
         </div>
       </div>
       <div class="footer__bottom">
-        <p class="footer__copyright"><span>© 2020 SKANDINAVISK TØMMERHUS.</span><span>Alle rettigheter er forbeholdt.</span></p>
+        <p class="footer__copyright"><span>© 2020 SKANDINAVISK TØMMERHUS.&nbsp;</span> <span>Alle rettigheter er forbeholdt.</span></p>
         <img src="img/_caballero-digital-agency.svg" alt="caballero logo" width="74" height="32">
       </div>
     </div>
@@ -396,10 +387,6 @@
 
   <script src="js/picturefill.min.js" async></script>
   <script src="js/script.min.js"></script>
-  <script
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBO87mtp8t5fnC1fM5OiukCSEBamuwVYUY&callback=initMap&libraries=&v=weekly"
-  async
-  >
-  </script>
+
 </body>
 </html>

@@ -2,8 +2,6 @@
   background: url('../../img/skandinavisk-tommerhuss-akvarelis-footer.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  // outline: 2px solid red;
-  // height: 500px;
 }
 
 .footer__top {
@@ -39,16 +37,6 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  outline: 2px solid red;
-}
-
-.footer__nav-item {
-
-  &:first-child {
-  }
-  &:last-child {
-    margin-right: 0;
-  }
 }
 
 .social {
@@ -104,28 +92,30 @@
 }
 
 @media screen and (min-width: 900px) {
+  .footer__top {
+    margin-bottom: 48px;
+  }
+
   .footer__nav {
-    // width: 50.1709402%;
     width: 587px;
-    // @include font(16px, 40px, 0.76px, $font-futura-medium, 400, #141414);
-    // margin-bottom: 25px;
-    // display: flex;
-    // flex-direction: row;
     flex-grow: 0;
-    // order: 3;
-    outline: 2px solid red;
   }
 
   .footer__nav-items {
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .footer__copyright {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (min-width: $desktop-width) {
   .footer {
     width: 100%;
-    // max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -137,29 +127,18 @@
     margin-left: auto;
   }
 
-
   .footer__top {
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: space-between;
-    // flex-wrap: wrap;
-    margin-bottom: 68px;
+    margin-bottom: 63px;
   }
+
 
   .footer__logo-image {
     width: auto;
   }
 
   .footer__nav {
-    // width: 50.1709402%;
     width: 587px;
-    // @include font(16px, 40px, 0.76px, $font-futura-medium, 400, #141414);
-    // margin-bottom: 25px;
-    // display: flex;
-    // flex-direction: column;
     flex-grow: 0;
-    // order: 3;
-    outline: 2px solid red;
   }
 
   .footer__nav-items {
@@ -169,30 +148,17 @@
 
   .social__icons {
     width: 140px;
-    // display: flex;
-    // justify-content: space-between;
-    // margin-right: 5px;
   }
 
   .footer__bottom {
-    // @include font(16px, 20px, 0.57px, $font-futura-book, 300, #666666);
     font-size: 16px;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-
-    // & img {
-    //   margin-bottom: 25px;
-    // }
     & img {
       margin-bottom: 75px;
     }
   }
 
   .footer__copyright {
-    // display: flex;
     flex-direction: row;
-    // align-items: center;
     margin-bottom: 40px;
   }
 }

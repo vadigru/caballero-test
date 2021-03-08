@@ -23,9 +23,6 @@
   margin-left: 25px;
 }
 
-.page-header__link {
-}
-
 .page-header__menu-toggle {
   font-size: 0;
   display: block;
@@ -38,7 +35,7 @@
   background-color: transparent;
   border: 0;
   box-sizing: content-box;
-
+  cursor: pointer;
   &--open {
     background-image: url("../../img/icon-menu-close.svg");
     background-size: 21px 22px;
@@ -141,7 +138,6 @@
   .page-header {
     width: 100%;
     max-width: 1440px;
-    // margin: 0 auto;
     margin-right: auto;
     margin-left: auto;
   }

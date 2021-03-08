@@ -1,28 +1,90 @@
 .references {
+  // margin-bottom: 50px;
+}
+
+.references__container {
   position: relative;
 }
 
 .references__title {
   @include font(42px, 60px, 0.76px, $font-futura-book, 300, #333333);
-  position: absolute;
-  display: block;
-  width: 100%;
+  // position: absolute;
+  // display: block;
+  // width: 100%;
+  margin-bottom: 30px;
   z-index: 999;
   text-align: center;
-  background: linear-gradient(white 0%, transparent 100%);
+  // background: linear-gradient(white 0%, transparent 100%);
 }
 
-.references__bottom-gradient {
-  background: linear-gradient(transparent 0%, white 100%);
-  height: 50px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  z-index: 999;
+.references__map-wrap {
+  overflow: hidden;
+  height: 545px;
+  text-align: center;
+  position: relative;
 }
+
+.references__map-interactive {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -46px;
+  border: 0;
+  // mapOverlay.style.position = 'absolute';
+  // mapOverlay.style.top
+  // width: 100%;
+  // height: 100%;
+  // outline: 2px solid firebrick;
+}
+
+.references__map-overlay {
+  color: transparent;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  &:hover {
+    @include font(40px, 60px, 0.76px, $font-futura-book, 500, #ffffff);
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // position: absolute;
+  }
+}
+
+// .references__bottom-gradient {
+//   background: linear-gradient(transparent 0%, white 100%);
+//   height: 50px;
+//   position: absolute;
+//   bottom: 0;
+//   width: 100%;
+//   z-index: 999;
+// }
 
 @media screen and (min-width: $tablet-width) {
+  .references__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .references__map-wrap {
+    width: 640px;
+    height: 445px;
+  }
+
+  .references__map-interactive {
+    width: 100%;
+    height: 100%;
+  }
+
+  .references__map-overlay {
+    height: 400px;
+  }
 }
 
 @media screen and (min-width: $desktop-width) {
@@ -38,5 +100,19 @@
     max-width: 1170px;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .references__map-wrap {
+    width: 100%;
+    height: 593px;
+  }
+
+  .references__map-interactive {
+    width: 100%;
+    height: 100%;
+  }
+
+  .references__map-overlay {
+    height: 548px;
   }
 }
