@@ -7,11 +7,7 @@
 }
 
 body {
-  font-family: black;
   background-color: white;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
 }
 
 a {
@@ -23,10 +19,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-// ul {
-//   list-style-type: none;
-// }
 
 .visually-hidden {
   position: absolute;
@@ -77,12 +69,19 @@ img {
 
 
 
-section {
-  // border: 2px solid firebrick;
-}
+// section {
+//   // border: 2px solid firebrick;
+// }
 
 // .wrapper {
 //   // width: 100%;
 //   margin: 0 auto;
 //   outline: 2px solid green;
 // }
+
+.container {
+  width: 92.3611111%;
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+}

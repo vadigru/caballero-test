@@ -1,0 +1,23 @@
+.download-pdf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-pdf__icon {
+  margin-right: 16px;
+}
+
+.download-pdf__link {
+  @include font(16px, 32px, 3px, $font-futura-demi, 500, $night-rider);
+  text-transform: uppercase;
+  position: relative;
+  &::after {
+    content: url("../../img/read-more-icon.svg");
+    width: 19px;
+    height: 32px;
+    position: absolute;
+    top: 0px;
+    right: -27px;
+  }
+}

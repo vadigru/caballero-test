@@ -1,20 +1,12 @@
-.references {
-  // margin-bottom: 50px;
-}
-
 .references__container {
   position: relative;
 }
 
 .references__title {
-  @include font(42px, 60px, 0.76px, $font-futura-book, 300, #333333);
-  // position: absolute;
-  // display: block;
-  // width: 100%;
+  @include font(42px, 60px, 0.76px, $font-futura-book, 300, $night-rider);
   margin-bottom: 30px;
   z-index: 999;
   text-align: center;
-  // background: linear-gradient(white 0%, transparent 100%);
 }
 
 .references__map-wrap {
@@ -28,42 +20,24 @@
   width: 100%;
   height: 100%;
   position: relative;
-  top: -46px;
+  top: -55px;
   border: 0;
-  // mapOverlay.style.position = 'absolute';
-  // mapOverlay.style.top
-  // width: 100%;
-  // height: 100%;
-  // outline: 2px solid firebrick;
 }
 
 .references__map-overlay {
   color: transparent;
   width: 100%;
-  height: 500px;
+  height: 490px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   top: 0;
   &:hover {
-    @include font(40px, 60px, 0.76px, $font-futura-book, 500, #ffffff);
-    background-color: rgba($color: #000000, $alpha: 0.2);
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // position: absolute;
+    @include font(40px, 60px, 0.76px, $font-futura-book, 500, $white);
+    background-color: rgba($color: $black, $alpha: 0.2);
   }
 }
-
-// .references__bottom-gradient {
-//   background: linear-gradient(transparent 0%, white 100%);
-//   height: 50px;
-//   position: absolute;
-//   bottom: 0;
-//   width: 100%;
-//   z-index: 999;
-// }
 
 @media screen and (min-width: $tablet-width) {
   .references__container {
@@ -83,25 +57,11 @@
   }
 
   .references__map-overlay {
-    height: 400px;
+    height: 390px;
   }
 }
 
 @media screen and (min-width: $desktop-width) {
-  .references {
-    width: 100%;
-    max-width: 1440px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .references__container {
-    width: 92.3611111%;
-    max-width: 1170px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   .references__map-wrap {
     width: 100%;
     height: 593px;
@@ -113,6 +73,6 @@
   }
 
   .references__map-overlay {
-    height: 548px;
+    height: 538px;
   }
 }

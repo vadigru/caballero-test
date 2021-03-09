@@ -1,0 +1,46 @@
+.social {
+  width: 40%;
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+  order: 2;
+}
+
+.social__icons {
+  width: 105px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__icon {
+  width: 20px;
+}
+
+.social__btn {
+  fill: $grey;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    fill: $bottle-green;
+  }
+}
+
+.social__icon-wrap {
+  display: flex;
+  align-self: center;
+}
+
+@media screen and (min-width: 500px) {
+  .social {
+    width: auto;
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .social {
+    height: 50px;
+  }
+  .social__icons {
+    width: 140px;
+  }
+}

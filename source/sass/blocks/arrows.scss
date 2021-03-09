@@ -1,0 +1,25 @@
+.arrows {
+  width: 90px;
+  height: 45px;
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+}
+
+.arrows__left,
+.arrows__right {
+  width: 45px;
+  height: 45px;
+  border: none;
+  background-color: #ffffff;
+  background-image: url("../../img/read-more-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+}
+
+.arrows__right {
+  background-image: url("../../img/read-more-icon.svg");
+  transform: rotate(0);
+}

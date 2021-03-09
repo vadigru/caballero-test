@@ -1,0 +1,38 @@
+.lang__items {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.lang__item {
+  margin-right: 15px;
+  &:last-child {
+    margin-right: 0;
+  }
+  & a {
+    @include font(13px, 16px, 3.9px, $font-futura-medium, 500, $almost-black);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    margin-right: -3px;
+  }
+  &--active {
+    border-bottom: 1px solid $almost-black;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .lang__items {
+    margin-bottom: 0;
+  }
+
+  .lang {
+    margin-left: auto;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .lang {
+    margin-right: 10px;
+  }
+}

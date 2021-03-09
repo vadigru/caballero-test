@@ -3,13 +3,13 @@
 }
 
 .unique-tech__title {
-  @include font(42px, 60px, 0.76px, $font-futura-book, 300, #333333);
+  @include font(42px, 60px, 0.76px, $font-futura-book, 300, $night-rider);
   margin-bottom: 50px;
   text-align: center;
 }
 
 .unique-tech__text {
-  @include font(19px, 32px, 0.48px, $font-futura-book, 300, #666666);
+  @include font(19px, 32px, 0.48px, $font-futura-book, 300, $dim-gray);
   text-align: center;
   width: 90%;
   margin: 0 auto;
@@ -23,7 +23,7 @@
 }
 
 .unique-tech__items {
-  @include font(16px, 24px, 1.06px, $font-futura-medium, 500, #1C1F22);
+  @include font(16px, 24px, 1.06px, $font-futura-medium, 500, $cinder);
 }
 
 .unique-tech__item {
@@ -40,8 +40,8 @@
 
 .unique-tech__subitem-text {
   &:hover {
-    color: #3E5235;
-    border-bottom: 1px solid #3E5235;
+    color: $palm-leaf;
+    border-bottom: 1px solid $palm-leaf;
     cursor: pointer;
   }
 }
@@ -50,23 +50,23 @@
   content: "";
   width: 20px;
   height: 20px;
-  border: 1px solid #979797;
+  border: 1px solid $shady-lady;
   border-radius: 50%;
   position: absolute;
   left: 0;
 }
 
 .unique-tech__input:checked + label::before {
-  border-radius: 1px solid #3E5235;
-  background-color: #3E5235;
+  border-radius: 1px solid $palm-leaf;
+  background-color: $palm-leaf;
 }
 
 .unique-tech__input:checked + label {
-  color: #3E5235;
+  color: $palm-leaf;
 }
 
 .unique-tech__subitems {
-  @include font(19px, 32px, 0.48px, $font-futura-book, 300, #666666);
+  @include font(19px, 32px, 0.48px, $font-futura-book, 300, $dim-gray);
   padding-left: 50px;
 }
 
@@ -86,7 +86,6 @@
   }
 
   .unique-tech__items {
-    // @include font(16px, 24px, 1.06px, $font-futura-medium, 500, #1C1F22);
     font-size: 19px;
   }
 
@@ -106,20 +105,6 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-  .unique-tech {
-    width: 100%;
-    max-width: 1440px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .unique-tech__container {
-    width: 92.3611111%;
-    max-width: 1170px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   .unique-tech__text {
     width: 844px;
     margin-bottom: 53px;
