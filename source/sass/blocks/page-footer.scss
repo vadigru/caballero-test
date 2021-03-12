@@ -24,7 +24,7 @@
 }
 
 .footer__nav {
-  @include font(16px, 40px, normal, $font-futura-medium, 400, #141414);
+  @include font(16px, 40px, normal, $font-futura-medium, 400, $nero);
   width: 230x;
   display: flex;
   flex-direction: column;
@@ -57,15 +57,20 @@
   margin-bottom: 50px;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: $before-tablet-width) {
   .footer__nav {
     order: 1;
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: $before-desktop-width) {
   .footer__top {
     margin-bottom: 48px;
+  }
+
+  .footer__logo-image {
+    width: auto;
+    margin-bottom: 0;
   }
 
   .footer__nav {

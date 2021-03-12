@@ -23,11 +23,7 @@
     <div class="page-header__container">
       <div class="page-header__logo">
         <a class="page-header__link" href="#">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/skandinavisk-tommerhus-logo.svg">
-            <source media="(min-width: 768px)" srcset="img/skandinavisk-tommerhus-logo.svg">
-            <img class="page-header__logo-image" src="img/skandinavisk-tommerhus-logo.svg" width="172" height="37" alt="skandinavisk Tommerhus logo">
-          </picture>
+          <img class="page-header__logo-image" src="img/skandinavisk-tommerhus-logo.svg" width="172" height="37" alt="skandinavisk Tommerhus logo">
         </a>
         <button class="page-header__menu-toggle page-header__menu-toggle--nojs" type="button">Открыть меню</button>
       </div>
@@ -121,38 +117,6 @@
                   Tømmerstokkprofiler og typer
                 </label>
                 <ul class="list-no-style unique-tech__subitems">
-                  <li class="unique-tech__subitem">
-                    <span class="unique-tech__subitem-number">10 </span>
-                    <span class="unique-tech__subitem-text">Corner</span>
-                  </li>
-                  <li class="unique-tech__subitem">
-                    <span class="unique-tech__subitem-number">11 </span>
-                    <span class="unique-tech__subitem-text">Foundation crown</span>
-                  </li>
-                  <li class="unique-tech__subitem">
-                    <span class="unique-tech__subitem-number">12 </span>
-                    <span class="unique-tech__subitem-text">Dovetail</span>
-                  </li>
-                  <li class="unique-tech__subitem">
-                    <span class="unique-tech__subitem-number">13 </span>
-                    <span class="unique-tech__subitem-text">Reverse joint</span>
-                  </li>
-                  <li class="unique-tech__subitem">
-                    <span class="unique-tech__subitem-number">14 </span>
-                    <span class="unique-tech__subitem-text">Combined joint</span>
-                  </li>
-                  <li class="unique-tech__subitem">
-                    <span class="unique-tech__subitem-number">15 </span>
-                    <span class="unique-tech__subitem-text">Purlins joint</span>
-                  </li>
-                  <li class="unique-tech__subitem">
-                    <span class="unique-tech__subitem-number">16 </span>
-                    <span class="unique-tech__subitem-text">End joint</span>
-                  </li>
-                  <li class="unique-tech__subitem">
-                    <span class="unique-tech__subitem-number">17 </span>
-                    <span class="unique-tech__subitem-text">Tongue & Groove</span>
-                  </li>
                 </ul>
               </li>
               <li class="unique-tech__item">
@@ -176,7 +140,11 @@
             </ul>
           </div>
           <div  class="unique-tech__image">
-            <img src="img/Layer-transparent@2x.png" alt="Wooden house" />
+            <div class="unique-tech__image-wrap">
+              <img src="img/Layer-transparent@2x.png" alt="Wooden house" />
+              <div class="unique-tech__pins pins">
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -328,11 +296,7 @@
       <div class="footer__top">
         <div class="footer__logo">
           <a class="footer__link">
-            <picture>
-              <source media="(min-width: 1150px)" srcset="img/skandinavisk-tommerhus-logo.svg">
-              <source media="(min-width: 768px)" srcset="img/skandinavisk-tommerhus-logo.svg">
-              <img class="footer__logo-image" src="img/skandinavisk-tommerhus-logo.svg" width="182" height="6" alt="skandinavisk Tommerhus logo">
-            </picture>
+            <img class="footer__logo-image" src="img/skandinavisk-tommerhus-logo.svg" width="182" height="6" alt="skandinavisk Tommerhus logo">
           </a>
         </div>
         <nav class="footer__nav">
@@ -382,7 +346,28 @@
     </div>
   </footer>
 
-  <script src="js/picturefill.min.js" async></script>
+  <template>
+    <li class="unique-tech__subitem" id="10">
+      <span class="unique-tech__subitem-number">10 </span>
+      <span class="unique-tech__subitem-text">Corner</span>
+    </li>
+
+    <div class="pins__item pin">
+      <button class="pin__btn" type="button">10</button>
+    </div>
+
+    <div class="pin__btn-popup pin__btn-popup--off">
+      <img class="pin__btn-image" src="img/actual-wood-wall.jpg" alt="example part of house " width="120" height="120">
+      <div class="pin__btn-wrap">
+        <h3 class="pin__btn-title">Navn</h3>
+        <p class="pin__btn-text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+      </div>
+      <p class="pin__btn-link"><a href="">i full størrelse</a></p>
+    </div>
+  </template>
+
   <script src="js/script.min.js"></script>
 
 </body>

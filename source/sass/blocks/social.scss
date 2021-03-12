@@ -29,17 +29,14 @@
   align-self: center;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: $before-tablet-width) {
   .social {
     width: auto;
-    height: 30px;
+    height: 40px;
   }
 }
 
 @media screen and (min-width: $desktop-width) {
-  .social {
-    height: 50px;
-  }
   .social__icons {
     width: 140px;
   }
