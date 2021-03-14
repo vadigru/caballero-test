@@ -40,7 +40,7 @@
   text-decoration: underline;
   position: relative;
   &::after {
-    content: url("../../img/read-more-icon.svg");
+    content: url("./../img/read-more-icon.svg");
     width: 19px;
     height: 32px;
     position: absolute;

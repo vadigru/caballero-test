@@ -13,13 +13,13 @@
   height: 45px;
   border: none;
   background-color: #ffffff;
-  background-image: url("../../img/read-more-icon.svg");
+  background-image: url("./../img/read-more-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   transform: rotate(180deg);
 }
 
 .arrows__right {
-  background-image: url("../../img/read-more-icon.svg");
+  background-image: url("./../img/read-more-icon.svg");
   transform: rotate(0);
 }
