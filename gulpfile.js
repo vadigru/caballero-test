@@ -3,7 +3,7 @@
 var gulp = require("gulp");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
-var sass = require("gulp-sass");
+var sass = require('gulp-sass')(require('sass'));
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
@@ -83,9 +83,7 @@ gulp.task("jscompress", function () {
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
-  .pipe(posthtml([
-    include()
-  ]))
+  .pipe(posthtml())
   .pipe(htmlmin({
     collapseWhitespace: true
   }))
