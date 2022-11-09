@@ -1,7 +1,7 @@
 # How to start a project locally:
 Download or clone:
 ```sh
-git clone https://vadigru@bitbucket.org/vadigru/caballero-test.git
+git clone git@github.com:vadigru/caballero-test.git
 ```
 Install project on local computer (node.js required):
 ```sh
